@@ -1,0 +1,61 @@
+.main {
+    padding: var(--space-xl);
+}
+.checkout-layout {
+    gap: var(--space-lg);
+    justify-content: space-around;
+}
+.form {
+    width: 100%;
+    max-width: 500px;
+    gap: var(--space-mid);
+    padding: var(--space-lg);
+}
+.field input {
+    padding: var(--space-sm);
+    border-radius: var(--radius);
+    border: 1px solid transparent;
+    transition: var(--transition);
+    /* cursor: pointer; */
+}
+
+.field input:hover {
+    border: 1px solid var(--hover-mainbtn);
+}
+.field input:focus,
+.city:focus {
+    outline: 1px solid var(--hover-mainbtn);
+}
+.field label {
+    text-transform: capitalize;
+}
+.feild-error {
+    border: 1px solid var(--danger);
+}
+.city {
+    padding: var(--space-sm);
+    border-radius: var(--radius);
+}
+.city:hover {
+    border: 1px solid var(--hover-mainbtn);
+}
+.form .btn {
+    width: fit-content;
+}
+.card {
+    padding: var(--space-mid);
+    max-width: 200px;
+    width: 100%;
+}
+.summary-info {
+    background-color: var(--surface);
+    gap: var(--space-sm);
+    padding: var(--space-lg);
+    border-radius: var(--radius);
+    width: fit-content;
+}
+@media (max-width: 470px) {
+    .checkout-layout {
+        flex-direction: column;
+    }
+}

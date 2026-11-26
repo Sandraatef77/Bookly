@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bookly</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body>
+        <header class="header flex-row">
+            <div class="logo">Bookly</div>
+            <nav class="nav flex-row">
+                <ul class="flex-row">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li>
+                        <a href="cart.html" class="gap">Cart <span class="cart-count">0</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main flex-column">
+            <section class="hero flex-row">
+                <div class="hero-text flex-column">
+                    <h1>bookly for easier reading</h1>
+                    <p>bookly is designed for making reading easy and help you to read anywhere, to save your time and build your mind</p>
+                    <div class="hero-btns">
+                        <a href="products.html" class="btn">Shop Books</a>
+                    </div>
+                </div>
+
+                <div class="hero-cover flex-row">
+                    <div class="book-cover book-cover--1 flex-column flex-center">
+                        <h3>free love</h3>
+                        <p>francis revers</p>
+                    </div>
+                    <div class="book-cover book-cover--2 flex-column flex-center">
+                        <h3>atomic habits</h3>
+                        <p>James Clear</p>
+                    </div>
+                    <div class="book-cover book-cover--3 flex-column flex-center">
+                        <h3>healthy relationship</h3>
+                        <p>Awsom Wasfy</p>
+                    </div>
+                </div>
+            </section>
+            <section class="featured-books flex-column">
+                <h2>featured books</h2>
+                <div class="featured-list flex-row flex-center"></div>
+            </section>
+            <section class="sale-banner flex-column flex-center">
+                <h2>50% sale on online books</h2>
+                <p>limited books left!</p>
+                <span class="timer"></span>
+
+                <a href="products.html" class="btn">Have a Look</a>
+            </section>
+        </main>
+        <footer class="footer flex-center">All rights reserved to @Sandra2026 @Bookly</footer>
+        <script type="module" src="js/main.js"></script>
+        <script type="module" src="js/index.js"></script>
+    </body>
+</html>

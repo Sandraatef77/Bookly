@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bookly</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/product.css" />
+    </head>
+    <body>
+        <header class="header flex-row">
+            <div class="logo">Bookly</div>
+            <nav class="nav flex-row">
+                <ul class="flex-row">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li>
+                        <a href="cart.html">Cart <span class="cart-count">0</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main flex-row">
+            <div class="details-cover book-cover book-cover--3 flex-column flex-center">
+                <h3>Iconic Love</h3>
+                <p>Sandra El Behary</p>
+            </div>
+
+            <div class="details-info flex-column">
+                <a href="products.html" class="link">back to products</a>
+                <h1 class="details-title">Iconic Love</h1>
+                <p class="details-author">Sandra El Behary</p>
+                <p class="details-rating">Rating : 3.8</p>
+                <div class="details-meta flex-row">
+                    <p class="details-type badge badge--ebook">E-book</p>
+                    <p class="details-price">Price: <span class="details-price-value">13.99</span></p>
+                </div>
+                <p class="details-stock">Stock : 0</p>
+                <p class="details-firstp">love story that will never happen ,but their heroes never lose hope</p>
+                <button class="btn details-btn" disabled>out of stock</button>
+            </div>
+        </main>
+        <footer class="footer flex-center">All rights reserved to @Sandra2026 @Bookly</footer>
+        <script type="module" src="js/main.js"></script>
+        <script type="module" src="js/product.js"></script>
+    </body>
+</html>

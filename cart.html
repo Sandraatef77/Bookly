@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bookly</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/cart.css" />
+    </head>
+    <body>
+        <header class="header flex-row">
+            <div class="logo">Bookly</div>
+            <nav class="nav flex-row">
+                <ul class="flex-row">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li>
+                        <a href="cart.html" class="active">Cart <span class="cart-count">0</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <h1 class="flex-center">your cart</h1>
+            <div class="cart-list flex-row">
+                <div class="cart-item-wrapper flex-column">
+                    <div class="cart-item flex-row flex-center">
+                        <div class="book-cover book-cover--3 flex-column flex-center">
+                            <h4>The elephant</h4>
+                            <p>Peter</p>
+                        </div>
+                        <div class="cart-item-info flex-column">
+                            <p class="cart-item-price">price: $<span class="price-num">13.99</span></p>
+                            <p class="cart-item-quantity">
+                                quantity: <button class="cart-plus" data-id="id">+</button> <span class="cart-item-qty-num">4</span>
+                                <button class="cart-minus" data-id="id">-</button>
+                            </p>
+                            <p class="cart-item-totalprice">total price: <span class="cart-item-totalvalue">price * quantity</span></p>
+                            <button data-id="id" class="cart-delete btn">delete</button>
+                        </div>
+                    </div>
+                    <div class="cart-item flex-row flex-center">
+                        <div class="book-cover book-cover--2 flex-column flex-center">
+                            <h4>Iconic Love</h4>
+                            <p>Sandra El Behary</p>
+                        </div>
+                        <div class="cart-item-info flex-column">
+                            <p class="cart-item-price">price: $<span class="price-num">12.99</span></p>
+                            <p class="cart-item-quantity">
+                                quantity: <button class="cart-plus" data-id="id">+</button> <span class="cart-item-qty-num"> 2</span>
+                                <button class="cart-minus" data-id="id">-</button>
+                            </p>
+                            <p class="cart-item-totalprice">total price: <span class="cart-item-totalvalue">price * quantity</span></p>
+                            <button data-id="id" class="cart-delete btn">delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="summary-card flex-column">
+                    <h2>summary card</h2>
+                    <p class="card-price">total: <span class="summary-total">price</span></p>
+                    <p class="card-delivery">delivery: $<span class="summary-delivery">3</span></p>
+                    <p class="card-total-price">total price: <span class="summary-total-price">price + delivery</span></p>
+                    <a href="checkout.html" class="btn checkout flex-center">check out</a>
+                </div>
+            </div>
+            <div class="hidden empty-card flex-center flex-column">
+                <p>Your Card Is Empty</p>
+                <a href="products.html" class="btn">go to products</a>
+            </div>
+        </main>
+        <footer class="footer flex-center">All rights reserved to @Sandra2026 @Bookly</footer>
+        <script type="module" src="js/main.js"></script>
+        <script type="module" src="js/cart.js"></script>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bookly</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/products.css" />
+    </head>
+    <body>
+        <header class="header flex-row">
+            <div class="logo">Bookly</div>
+            <nav class="nav flex-row">
+                <ul class="flex-row">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li>
+                        <a href="cart.html">Cart <span class="cart-count">0</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main flex-row">
+            <aside class="aside flex-column">
+                <div class="flex-column">
+                    <h3>Type</h3>
+                    <div class="type-wrapper gap flex-row">
+                        <div class="flex-row gap">
+                            <label for="all">All</label>
+                            <input type="radio" id="all" name="type" value="all" checked class="radio" />
+                        </div>
+                        <div class="flex-row gap">
+                            <label for="ebook">E-book</label>
+                            <input type="radio" id="ebook" name="type" value="ebook" class="radio" />
+                        </div>
+                        <div class="flex-row gap">
+                            <label for="paper">Paper</label>
+                            <input type="radio" id="paper" name="type" value="paper" class="radio" />
+                        </div>
+                    </div>
+                </div>
+                <div class="categories-wrapper flex-column">
+                    <h3>Categories</h3>
+                    <div class="filter-categories flex-column flex-center"></div>
+                </div>
+                <p class="results-count"></p>
+                <button type="button" class="btn flex-center reset">Reset</button>
+            </aside>
+            <div class="products-area flex-column">
+                <div class="main-wrapper flex-row">
+                    <div class="gap flex-column">
+                        <label for="search">Search</label>
+                        <input type="search" id="search" placeholder="search by title or author" class="input" />
+                    </div>
+                    <div class="flex-column gap">
+                        <label for="select-box">Sort By</label>
+                        <select id="select-box" class="input">
+                            <option value="default">Default</option>
+                            <option value="price-low-to-high">Price low to high</option>
+                            <option value="price-high-to-low">Price high to low</option>
+                            <option value="rating">Rating</option>
+                            <option value="a-to-z">A to Z</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="products-list flex-row"></div>
+            </div>
+        </main>
+
+        <footer class="footer flex-center">All rights reserved to @Sandra2026 @Bookly</footer>
+        <script type="module" src="js/main.js"></script>
+        <script type="module" src="js/products.js"></script>
+    </body>
+</html>

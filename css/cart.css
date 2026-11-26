@@ -1,0 +1,70 @@
+.cart-list {
+    padding: var(--space-lg);
+    gap: var(--space-xl);
+    justify-content: space-around;
+}
+.cart-item-wrapper {
+    gap: var(--space-mid);
+}
+.cart-item {
+    gap: var(--space-mid);
+    background-color: var(--surface);
+    padding: var(--space-mid);
+    border-radius: var(--radius);
+}
+.cart-item-info {
+    gap: var(--space-sm);
+}
+.cart-item-quantity {
+    align-items: center;
+    display: flex;
+    gap: var(--space-sm);
+}
+.cart-item .book-cover {
+    width: 100px;
+}
+
+.cart-plus,
+.cart-minus {
+    background-color: var(--price-mainbtn);
+    color: var(--on-primary);
+    border-radius: var(--space-sm);
+    padding: var(--space-sm);
+    outline: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+.summary-card {
+    gap: var(--space-sm);
+    background-color: var(--surface);
+    padding: var(--space-mid);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.cart-delete {
+    background-color: var(--surface-alt);
+    color: var(--price-mainbtn);
+    font-weight: bold;
+    border: 1px solid var(--price-mainbtn);
+    width: fit-content;
+}
+.cart-delete:hover:not(:disabled) {
+    color: var(--hover-mainbtn);
+}
+.empty-card p {
+    font-size: var(--fs-lg);
+}
+.empty-card {
+    padding: var(--space-lg);
+    background-color: var(--surface);
+    width: fit-content;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    gap: var(--space-mid);
+}
+@media (max-width: 550px) {
+    .cart-list {
+        flex-direction: column;
+    }
+}

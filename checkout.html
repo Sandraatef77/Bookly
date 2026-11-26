@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bookly</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/checkout.css" />
+    </head>
+    <body>
+        <header class="header flex-row">
+            <div class="logo">Bookly</div>
+            <nav class="nav flex-row">
+                <ul class="flex-row">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li>
+                        <a href="cart.html">Cart <span class="cart-count">0</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <h1 class="flex-center">checkout</h1>
+            <div class="checkout-layout flex-row">
+                <form class="form flex-column" novalidate>
+                    <div class="field flex-column">
+                        <label for="name">name</label>
+                        <input name="name" type="text" placeholder="name" id="name" required />
+                        <span class="error-message error-name"></span>
+                    </div>
+                    <div class="field flex-column">
+                        <label for="email">email</label>
+                        <input name="email" type="email" placeholder="email" id="email" required />
+                        <span class="error-message error-email"></span>
+                    </div>
+                    <div class="field flex-column">
+                        <label for="tel">telephone</label>
+                        <input name="tel" type="tel" placeholder="telephone" id="tel" required />
+                        <span class="error-message error-tel"></span>
+                    </div>
+                    <div class="field flex-column">
+                        <label for="address">address</label>
+                        <input name="address" type="text" placeholder="address" id="address" required />
+                        <span class="error-message error-address"></span>
+                    </div>
+                    <div class="field flex-column">
+                        <label for="city">city</label>
+                        <select name="city" id="city" class="city">
+                            <option value="sohag">sohag</option>
+                            <option value="alex">alex</option>
+                            <option value="cairo">cairo</option>
+                            <option value="qena">qena</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="btn flex-center">submit</button>
+                </form>
+                <div class="card flex-column">
+                    <h3>summary card</h3>
+                    <span>total books: <span class="total-books"></span> </span>
+                    <span>total price: <span class="price"></span></span>
+                </div>
+            </div>
+
+            <div class="hidden summary-info flex-center flex-column">
+                <p>order sucssed</p>
+                <p>your order number is <span class="order-number">5</span></p>
+                <p>date <span class="order-date">20/11/2026</span></p>
+                <a href="index.html" class="btn">back to home</a>
+            </div>
+        </main>
+        <footer class="footer flex-center">All rights reserved to @Sandra2026 @Bookly</footer>
+        <script type="module" src="js/main.js"></script>
+        <script type="module" src="js/checkout.js"></script>
+    </body>
+</html>
